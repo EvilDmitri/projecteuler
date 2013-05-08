@@ -13,3 +13,12 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+
+digits = list(str(factorial(100)))
+
+S = 0
+for digit in digits:
+    print(digit)
+    S += int(digit)
+
+print(S)
